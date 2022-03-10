@@ -205,6 +205,10 @@ Type ='Manual'*/
 
 
 	lr_start_transaction("4_mess");
+	
+	web_reg_find("Search=Body",
+		"Text=endbernar\"\:\{\"status\"\:\"ok",
+		LAST);	
 
 	web_custom_request("liza1_45",
 		"URL=https://mail.yandex.ru/web-api/do-send/liza1?_send=true",
