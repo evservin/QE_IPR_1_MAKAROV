@@ -207,7 +207,7 @@ Type ='Manual'*/
 	lr_start_transaction("4_mess");
 	
 	web_reg_find("Search=Body",
-		"Text=endbernar\"\:\{\"status\"\:\"ok",
+		"Text=$sendbernar\"\:\{\"status\"\:\"ok",
 		LAST);	
 
 	web_custom_request("liza1_45",
