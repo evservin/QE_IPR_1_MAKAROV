@@ -206,6 +206,11 @@ RuleName ='ckey":"(.*?)"'*/
 	web_reg_find("Search=All",
 		"Text=folders",
 		LAST);
+	
+	
+	web_reg_find("Search=All",
+		"Text=folders\"\,\"status\"\:\"ok",
+		LAST);
 
 	web_custom_request("liza1_16",
 		"URL=https://mail.yandex.ru/web-api/models/liza1?_m=do-folders-add,folders",
