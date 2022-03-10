@@ -205,6 +205,11 @@ RuleName ='ckey":"(.*?)"'*/
 	
 
 	lr_start_transaction("4_newMark");
+	
+	
+	web_reg_find("Search=Body",
+	             "Text=add\"\,\"status\"\:\"ok",
+					LAST);	
 
 
 
